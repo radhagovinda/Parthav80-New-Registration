@@ -1,0 +1,317 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	<LINK href="styles/defaultIE.css" rel="stylesheet" type="text/css">
+    {BEGIN IEcssFiles}<LINK href="{$stylepathIE}" rel="stylesheet" type="text/css">
+    {END IEcssFiles}
+    <META name="GENERATOR" content="MSHTML 10.00.9200.16736">
+  </head>
+	
+	<BODY class="{$stylename}" {$bodyattrs}>
+    {BEGIN body}{$header}
+	<TABLE align="center" class="runner-toptable" style="width: auto;" cellpadding="0">
+        <TBODY>
+          <TR class="runner-header">
+            <TD align="center" class="runner-top" style="width: auto;">
+              <TABLE align="left">
+                <TBODY>
+                  <TR>
+                    <TD style="width: auto;" bgcolor="#ffffff">
+                      <IMG src="images/logo.png">
+                    </TD>
+                  </TR>
+                </TBODY>
+              </TABLE>
+              <P align="center">
+                <FONT size="6"><U>Acknowledgement</U></FONT>
+              </P>
+            </TD>
+          </TR>
+          <TR class="runner-body">
+            <TD style="width: auto;">
+              <HR noshade="">
+              {BEGIN container_details}<TABLE class="runner-c runner-c-details" cellpadding="0">
+                  <TBODY>
+                    <TR class="{$cheaderclass_details}">
+                      <TD class="runner-cl">
+                        <IMG src="images/spacer.gif">
+                      </TD>
+                      <TD class="runner-cc">
+                      </TD>
+                      <TD class="runner-cr">
+                        <IMG src="images/spacer.gif">
+                      </TD>
+                    </TR>
+                    <TR class="{$cfooterclass_details}">
+                      <TD class="runner-cl">
+                        <IMG src="images/spacer.gif">
+                      </TD>
+                      <TD class="runner-cc">
+                      </TD>
+                      <TD class="runner-cr">
+                        <IMG src="images/spacer.gif">
+                      </TD>
+                    </TR>
+                  </TBODY>
+                </TABLE>
+              {END container_details}
+            </TD>
+          </TR>
+          <TR class="runner-body">
+            <TD align="center" style="width: auto;">
+              <TABLE width="100%" bgcolor="#ffffff" border="0" cellspacing="1" 
+      cellpadding="1">
+                <TBODY>
+                  <TR>
+                    <TD>
+                      <FONT size="2">Acknowledgement&nbsp;No:&nbsp;&nbsp;
+                      <B>
+                        {$ReceiptNumber_value}
+                      </B>
+                      </FONT>
+                    </TD>
+                    <TD align="right">
+                      <FONT size="2">Date:
+                      <B>
+                        {$PaymentDate_value}
+                      </B>
+                      </FONT>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD>
+                    </TD>
+                    <TD>
+                    </TD>
+                  </TR>
+                </TBODY>
+              </TABLE>
+            </TD>
+          </TR>
+          <TR class="runner-body" bgcolor="#ffffff">
+            <TD style="width: auto;">
+              <HR noshade="">
+              &nbsp;
+              <P>
+              </P>
+              <P>
+                <FONT size="2">
+                <B>
+                  This is to acknowledge the receipt of&nbsp;cheque#<U><EM>{$CheckNumber_value}</EM></U>&nbsp; worth&nbsp;
+                </B>
+                </FONT><FONT size="2">
+                <B>
+                  &nbsp;Rs&nbsp;<U><EM>{$Total_value}</EM></U>&nbsp;(Rupees<U><EM>{$TotalInWords_value}</EM></U>&nbsp;&nbsp;only)&nbsp;
+                </B>
+                </FONT><FONT size="2">
+                <B>
+                  drawn on&nbsp;<U><EM>{$CheckBank_value}</EM></U>&nbsp; bank, pertaining to the fees
+                </B>
+                </FONT>
+              </P>
+              <P>
+                <FONT size="2">
+                <B>
+                </B>
+                </FONT>&nbsp;
+              </P>
+              <P>
+                <FONT size="2">
+                <B>
+                  of Mr./Ms.<U><EM>{$FirstName_value}</EM></U>&nbsp;<U><EM>{$LastName_value}</EM></U>&nbsp;(<U><EM>{$EnrollmentNumber_value}</EM></U>)&nbsp; of class{$Class_value}.
+                </B>
+                </FONT>
+              </P>
+            </TD>
+          </TR>
+          <TR class="runner-body">
+            <TD style="width: auto;">
+              &nbsp;
+            </TD>
+          </TR>
+          <TR class="runner-body">
+            <TD style="width: auto;">
+              &nbsp;
+            </TD>
+          </TR>
+          <TR class="runner-body">
+            <TD align="center" style="width: auto;">
+              <TABLE border="0" cellspacing="1" cellpadding="1">
+                <TBODY>
+                  <TR>
+                    <TD style="width: 149px;" colspan="4">
+                      <P align="center">
+                        {$displayDetailTable_vw_payment_acknowledgement_detail}
+                      </P>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD style="width: 149px;">
+                    </TD>
+                    <TD width="354" style="width: 354px;">
+                    </TD>
+                    <TD style="width: 300px;">
+                    </TD>
+                    <TD style="width: 119px;">
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan="4">
+                      <TABLE width="100%" style="width: 900px;" border="0" cellspacing="0" 
+            cellpadding="2">
+                        <TBODY>
+                          <TR>
+                            <TD width="412" align="right" style="width: 545px;">
+                              <FONT 
+                  size="2">
+                              <B>
+                                GRAND TOTAL
+                              </B>
+                              &nbsp;&nbsp;&nbsp;&nbsp;</FONT>
+                            </TD>
+                            <TD width="73" align="right" style="width: 69px;">
+                              <FONT size="2">
+                              <B>
+                              </B>
+                              </FONT>
+                            </TD>
+                            <TD width="111" align="right" style="width: 147px;">
+                              <FONT 
+                  size="2">
+                              <B>
+                                <P>
+                                  {$Total_value}
+                                </P>
+                              </B>
+                              </FONT>
+                            </TD>
+                            <TD width="103" align="right" style="width: 136px;">
+                              <FONT 
+                  size="2"><FONT 
+            size="2">
+                              <B>
+                              </B>
+                              </FONT></FONT>
+                            </TD>
+                          </TR>
+                        </TBODY>
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TBODY>
+              </TABLE>
+            </TD>
+          </TR>
+          <TR class="runner-body">
+            <TD style="width: auto;">
+              &nbsp;
+            </TD>
+          </TR>
+          <TR class="runner-row style1">
+            <TD align="center" class="runner-cl" valign="baseline">
+              <P>
+                <HR noshade="">
+                <P>
+                </P>
+                <P>
+                  &nbsp;
+                </P>
+                <P>
+                  &nbsp;
+                </P>
+                <P>
+                  &nbsp;
+                </P>
+                <P>
+                  &nbsp;
+                </P>
+                <P>
+                  &nbsp;
+                </P>
+                <P>
+                  &nbsp;
+                </P>
+                <P>
+                  &nbsp;
+                </P>
+            </TD>
+          </TR>
+          <TR class="runner-row style1">
+            <TD align="center" class="runner-cl">
+              <TABLE width="100%" style="width: 957px;" border="0" cellspacing="0" 
+      cellpadding="2">
+                <TBODY>
+                  <TR>
+                    <TD width="30%" valign="top" style="width: 281px;">
+                      <TABLE width="100%" bordercolor="#000000" border="1" cellspacing="0" 
+            cellpadding="0">
+                        <TBODY>
+                        </TBODY>
+                      </TABLE>
+                    </TD>
+                    <TD width="5%" valign="top" style="width: 59px;">
+                    </TD>
+                    <TD style="width: 614px;">
+                      <TABLE width="100%" border="0" cellspacing="10" cellpadding="0">
+                        <TBODY>
+                          <TR>
+                            <TD>
+                              <P align="right">
+                                <FONT size="2">
+                                <I>
+                                  For
+                                </I>
+                                <B>
+                                  PARTHA Educational Institutions
+                                </B>
+                                </FONT><BR><BR><BR><FONT size="2">(Authorised Signatory)</FONT>
+                              </P>
+                            </TD>
+                          </TR>
+                        </TBODY>
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TBODY>
+              </TABLE>
+            </TD>
+          </TR>
+          <TR class="runner-row style1">
+            <TD align="center" class="runner-cl">
+              &nbsp;
+            </TD>
+          </TR>
+          <TR class="{$cfooterclass_pdf}">
+            <TD class="runner-cl">
+              &nbsp;
+            </TD>
+          </TR>
+          <TR class="{$cfooterclass_pdf}">
+            <TD class="runner-cc runner-bl runner-b-viewpdf" {$brickclass_viewpdf}>
+              <SPAN>
+                {BEGIN pdflink_block}{END pdflink_block}
+              </SPAN>
+            </TD>
+          </TR>
+          <TR class="{$cfooterclass_pdf}">
+            <TD class="runner-cl">
+              &nbsp;
+            </TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+    
+    {END body}
+	</body>
+</html>

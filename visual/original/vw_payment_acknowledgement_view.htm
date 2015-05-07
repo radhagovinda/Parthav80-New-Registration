@@ -1,0 +1,205 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel vw_payment_acknowledgement view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields2 {$brickclass_viewfields2}"><table class="fieldGrid fieldGrid2">
+
+<tr>
+<td>
+	{BEGIN ReceiptNumber_fieldblock}
+<div data-fieldname="ReceiptNumber" class="rnr-field style1 {$fielddispclass_ReceiptNumber}">
+  <span class="rnr-label">{$label vw_payment_acknowledgement ReceiptNumber}:</span>
+  <span class="rnr-control style3">{$ReceiptNumber_value}</span>
+</div>
+{END ReceiptNumber_fieldblock}
+	{BEGIN PaymentDate_fieldblock}
+<div data-fieldname="PaymentDate" class="rnr-field style1 {$fielddispclass_PaymentDate}">
+  <span class="rnr-label">{$label vw_payment_acknowledgement PaymentDate}:</span>
+  <span class="rnr-control style3">{$PaymentDate_value}</span>
+</div>
+{END PaymentDate_fieldblock}
+	{BEGIN CheckNumber_fieldblock}
+<div data-fieldname="CheckNumber" class="rnr-field style1 {$fielddispclass_CheckNumber}">
+  <span class="rnr-label">{$label vw_payment_acknowledgement CheckNumber}:</span>
+  <span class="rnr-control style3">{$CheckNumber_value}</span>
+</div>
+{END CheckNumber_fieldblock}
+	{BEGIN Total_fieldblock}
+<div data-fieldname="Total" class="rnr-field style1 {$fielddispclass_Total}">
+  <span class="rnr-label">{$label vw_payment_acknowledgement Total}:</span>
+  <span class="rnr-control style3">{$Total_value}</span>
+</div>
+{END Total_fieldblock}
+	{BEGIN TotalInWords_fieldblock}
+<div data-fieldname="TotalInWords" class="rnr-field style1 {$fielddispclass_TotalInWords}">
+  <span class="rnr-label">{$label vw_payment_acknowledgement TotalInWords}:</span>
+  <span class="rnr-control style3">{$TotalInWords_value}</span>
+</div>
+{END TotalInWords_fieldblock}
+</td>
+<td>
+	{BEGIN CheckBank_fieldblock}
+<div data-fieldname="CheckBank" class="rnr-field style1 {$fielddispclass_CheckBank}">
+  <span class="rnr-label">{$label vw_payment_acknowledgement CheckBank}:</span>
+  <span class="rnr-control style3">{$CheckBank_value}</span>
+</div>
+{END CheckBank_fieldblock}
+	{BEGIN FirstName_fieldblock}
+<div data-fieldname="FirstName" class="rnr-field style1 {$fielddispclass_FirstName}">
+  <span class="rnr-label">{$label vw_payment_acknowledgement FirstName}:</span>
+  <span class="rnr-control style3">{$FirstName_value}</span>
+</div>
+{END FirstName_fieldblock}
+	{BEGIN LastName_fieldblock}
+<div data-fieldname="LastName" class="rnr-field style1 {$fielddispclass_LastName}">
+  <span class="rnr-label">{$label vw_payment_acknowledgement LastName}:</span>
+  <span class="rnr-control style3">{$LastName_value}</span>
+</div>
+{END LastName_fieldblock}
+	{BEGIN EnrollmentNumber_fieldblock}
+<div data-fieldname="EnrollmentNumber" class="rnr-field style1 {$fielddispclass_EnrollmentNumber}">
+  <span class="rnr-label">{$label vw_payment_acknowledgement EnrollmentNumber}:</span>
+  <span class="rnr-control style3">{$EnrollmentNumber_value}</span>
+</div>
+{END EnrollmentNumber_fieldblock}
+	{BEGIN Class_fieldblock}
+<div data-fieldname="Class" class="rnr-field style1 {$fielddispclass_Class}">
+  <span class="rnr-label">{$label vw_payment_acknowledgement Class}:</span>
+  <span class="rnr-control style3">{$Class_value}</span>
+</div>
+{END Class_fieldblock}
+</td>
+</tr>
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_details} rnr-wrapper rnr-cbw-details">
+
+{BEGIN container_details}
+<div class="rnr-c rnr-cv rnr-c-details">
+
+{BEGIN detail_tables}
+		{BEGIN details_vw_payment_acknowledgement_detail}
+<div class="rnr-cw-detailsvw_payment_acknowledgement_detail rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsvw_payment_acknowledgement_detail rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-viewdetailsvw_payment_acknowledgement_detail rnr-b-viewdetails">
+
+	<div class="rnr-dcaption">
+		Vw Payment Acknowledgement Detail
+	</div>
+	{$displayDetailTable_vw_payment_acknowledgement_detail}
+</div>
+</div>
+</div>
+	{END details_vw_payment_acknowledgement_detail}
+{END detail_tables}
+
+
+</div>
+{END container_details}
+
+</div>
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--%%pagestyle%%-->
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+			
+
+
+
+{BEGIN container_grid}
+
+
+
+{BEGIN pages}
+<h1>Collection</h1>
+	<span {$pages_attrs}>
+		Page <b>{$pageno}</b> of <b>{$maxpages}</b>
+	</span>
+
+
+			<style>
+table.report {border-collapse: collapse} 
+table.report td {padding: 2px;border-width: 1px; border-style: solid; border-color: #cccccc;}
+div.page_block{clear:left;}
+td.noborder{padding-right:8px}
+td.data{padding-right:8px}
+td.group_1{background-color: #90EE90;}
+td.nbgroup_1{background-color: #90EE90;border-style:none;}
+td.header_1{background-color: #7ACA7A;}
+td.pagesummary{background-color:#ffffbb;}
+td.globalsummary{background-color:#ffe0b0;}
+</style>
+<div id="grid_block{$id}">
+<TABLE CELLPADDING=5 CELLSPACING=0 BORDER=0>
+	<tr class="runner-toprow style1">
+		<td class="runner-cl"><img src="images/spacer.gif"/></td>
+		<td class="runner-cc"></td>
+		<td class="runner-cr"><img src="images/spacer.gif"/></td>
+	</tr>
+	<tr class="runner-row style1">
+		<td class="runner-cl"></td>
+		<td class="runner-cc">
+			<table cellspacing=0 cellpadding=0 border=0 style="padding:2px">
+				{BEGIN grid_row}
+				<!-------------------------------------  group headers ----------------------------------------->
+					{BEGIN PaymentCategory_firstnewgroup}
+									<tr>
+					<td class=blackshade>Payment Category</td>
+					<td class=blackshade>Payment Date</td>
+					<td class=blackshade>Course Name</td>
+					<td class=blackshade>Fees</td>
+					</tr>
+					<tr>
+												<td class=header_1 >
+						<font style="font-weight:900">{$PaymentCategory_grval}</font>
+												</td>
+				<!-------------------------------------  data ----------------------------------------->
+					<td class=data>
+										{$PaymentDate_value}</td>
+					<td class=data>
+										{$CourseName_value}</td>
+					<td class=data>
+										{$Fees_value}</td>
+					</tr>
+					{END PaymentCategory_firstnewgroup}
+								{BEGIN nonewgroup}
+					<tr>
+						<td class=group_1 >
+												&nbsp;
+						</td>
+					<td class=data>
+					{$PaymentDate_value}
+					</td>
+					<td class=data>
+					{$CourseName_value}
+					</td>
+					<td class=data>
+					{$Fees_value}
+					</td>
+					</tr>
+				{END nonewgroup}
+				<!-------------------------------------  group summary ----------------------------------------->
+								{BEGIN PaymentCategory_endgroup}
+				<tr>
+					<td class=group_1 colspan=4 >
+					Summary for Payment Category {$PaymentCategory_grval}
+					 - {$groupPaymentCategory_total_cnt} records total</div></td>
+				</tr>
+								<!--  Sum -->
+				<tr>
+											<td class=group_1 style="border-left: solid black 1px;">Sum</td>
+											<td class=group_1>&nbsp;</td>
+											<td class=group_1>&nbsp;</td>
+											<td class=group_1>{$groupPaymentCategory_totalFees_sum}</td>
+				</tr>	
+																{END PaymentCategory_endgroup}
+				{END grid_row}
+			</table>
+		</td>
+		<td class="runner-cr"></td>
+	</tr>
+	<tr class="runner-row style1">
+		<td class="runner-cl"></td>
+		<td class="runner-cc">
+			<table cellspacing=0 cellpadding=0 border=0>
+								<tr>
+				<td class=blackshade>Payment Category</td>
+				<td class=blackshade>Payment Date</td>
+				<td class=blackshade>Course Name</td>
+				<td class=blackshade>Fees</td>
+				</tr>
+								<!--------------------------------------page summary-------------------------------------------->
+				<tr>
+					<td class=pagesummary colspan=4>Page summary 
+					 {$page_total_cnt} - records total</td>
+				</tr>
+								<!--  Sum -->
+				<tr>
+											<td class=pagesummary>Sum</td>
+											<td class=pagesummary>&nbsp;</td>
+											<td class=pagesummary>&nbsp;</td>
+											<td class=pagesummary>{$page_totalFees_sum}</td>
+				</tr>	
+																				<!--------------------------------------global summary-------------------------------------------->
+				<tr>
+					<td class=globalsummary colspan=4>Global summary 
+					 {$global_total_cnt} - records total</td>
+				</tr>
+								<!--  Sum -->
+				<tr>
+											<td class=globalsummary>Sum</td>
+											<td class=globalsummary>&nbsp;</td>
+											<td class=globalsummary>&nbsp;</td>
+											<td class=globalsummary>{$global_totalFees_sum}</td>
+				</tr>	
+															</table>
+		</td>
+		<td class="runner-cr"></td>
+	</tr>
+	<tr class="runner-bottomrow style1">
+		<td class="runner-cl"><img src="images/spacer.gif"/></td>
+		<td class="runner-cc"></td>
+		<td class="runner-cr"><img src="images/spacer.gif"/></td>
+	</tr>
+</table>			
+</div>
+{END pages}
+
+
+
+
+
+{END container_grid}
+
+
+	{END body}
+	</body>
+</html>

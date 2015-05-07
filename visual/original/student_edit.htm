@@ -1,0 +1,223 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+
+{BEGIN container_edit}
+<div class="rnr-c rnr-cv rnr-c-edit">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	{$pagetitlelabel student edit}
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields2_atop {$brickclass_editfields2_atop}"><table class="fieldGrid fieldGrid2 edit">
+
+<tr>
+<td>
+	{BEGIN FirstName_fieldblock}
+<div data-fieldname="FirstName" class="rnr-field style1 {$fielddispclass_FirstName}">
+  <div class="rnr-label above">{BEGIN FirstName_label}{$label student FirstName}{END FirstName_label}</div>
+  <div class="rnr-control style3">{$FirstName_editcontrol}</div>
+</div>
+{END FirstName_fieldblock}
+	{BEGIN LastName_fieldblock}
+<div data-fieldname="LastName" class="rnr-field style1 {$fielddispclass_LastName}">
+  <div class="rnr-label above">{BEGIN LastName_label}{$label student LastName}{END LastName_label}</div>
+  <div class="rnr-control style3">{$LastName_editcontrol}</div>
+</div>
+{END LastName_fieldblock}
+	{BEGIN Photo_fieldblock}
+<div data-fieldname="Photo" class="rnr-field style1 {$fielddispclass_Photo}">
+  <div class="rnr-label above">{BEGIN Photo_label}{$label student Photo}{END Photo_label}</div>
+  <div class="rnr-control style3">{$Photo_editcontrol}</div>
+</div>
+{END Photo_fieldblock}
+	{BEGIN Gender_fieldblock}
+<div data-fieldname="Gender" class="rnr-field style1 {$fielddispclass_Gender}">
+  <div class="rnr-label above">{BEGIN Gender_label}{$label student Gender}{END Gender_label}</div>
+  <div class="rnr-control style3">{$Gender_editcontrol}</div>
+</div>
+{END Gender_fieldblock}
+	{BEGIN DateOfBirth_fieldblock}
+<div data-fieldname="DateOfBirth" class="rnr-field style1 {$fielddispclass_DateOfBirth}">
+  <div class="rnr-label above">{BEGIN DateOfBirth_label}{$label student DateOfBirth}{END DateOfBirth_label}</div>
+  <div class="rnr-control style3">{$DateOfBirth_editcontrol}</div>
+</div>
+{END DateOfBirth_fieldblock}
+	{BEGIN Class_fieldblock}
+<div data-fieldname="Class" class="rnr-field style1 {$fielddispclass_Class}">
+  <div class="rnr-label above">{BEGIN Class_label}{$label student Class}{END Class_label}</div>
+  <div class="rnr-control style3">{$Class_editcontrol}</div>
+</div>
+{END Class_fieldblock}
+	{BEGIN EnrollmentNumber_fieldblock}
+<div data-fieldname="EnrollmentNumber" class="rnr-field style1 {$fielddispclass_EnrollmentNumber}">
+  <div class="rnr-label above">{BEGIN EnrollmentNumber_label}{$label student EnrollmentNumber}{END EnrollmentNumber_label}</div>
+  <div class="rnr-control style3">{$EnrollmentNumber_editcontrol}</div>
+</div>
+{END EnrollmentNumber_fieldblock}
+</td>
+<td>
+	{BEGIN Email_fieldblock}
+<div data-fieldname="Email" class="rnr-field style1 {$fielddispclass_Email}">
+  <div class="rnr-label above">{BEGIN Email_label}{$label student Email}{END Email_label}</div>
+  <div class="rnr-control style3">{$Email_editcontrol}</div>
+</div>
+{END Email_fieldblock}
+	{BEGIN MobileNumber_fieldblock}
+<div data-fieldname="MobileNumber" class="rnr-field style1 {$fielddispclass_MobileNumber}">
+  <div class="rnr-label above">{BEGIN MobileNumber_label}{$label student MobileNumber}{END MobileNumber_label}</div>
+  <div class="rnr-control style3">{$MobileNumber_editcontrol}</div>
+</div>
+{END MobileNumber_fieldblock}
+	{BEGIN Stream_fieldblock}
+<div data-fieldname="Stream" class="rnr-field style1 {$fielddispclass_Stream}">
+  <div class="rnr-label above">{BEGIN Stream_label}{$label student Stream}{END Stream_label}</div>
+  <div class="rnr-control style3">{$Stream_editcontrol}</div>
+</div>
+{END Stream_fieldblock}
+	{BEGIN Category_fieldblock}
+<div data-fieldname="Category" class="rnr-field style1 {$fielddispclass_Category}">
+  <div class="rnr-label above">{BEGIN Category_label}{$label student Category}{END Category_label}</div>
+  <div class="rnr-control style3">{$Category_editcontrol}</div>
+</div>
+{END Category_fieldblock}
+	{BEGIN EnrollmentDate_fieldblock}
+<div data-fieldname="EnrollmentDate" class="rnr-field style1 {$fielddispclass_EnrollmentDate}">
+  <div class="rnr-label above">{BEGIN EnrollmentDate_label}{$label student EnrollmentDate}{END EnrollmentDate_label}</div>
+  <div class="rnr-control style3">{$EnrollmentDate_editcontrol}</div>
+</div>
+{END EnrollmentDate_fieldblock}
+	{BEGIN Status_fieldblock}
+<div data-fieldname="Status" class="rnr-field style1 {$fielddispclass_Status}">
+  <div class="rnr-label above">{BEGIN Status_label}{$label student Status}{END Status_label}</div>
+  <div class="rnr-control style3">{$Status_editcontrol}</div>
+</div>
+{END Status_fieldblock}
+	{BEGIN OutDate_fieldblock}
+<div data-fieldname="OutDate" class="rnr-field style1 {$fielddispclass_OutDate}">
+  <div class="rnr-label above">{BEGIN OutDate_label}{$label student OutDate}{END OutDate_label}</div>
+  <div class="rnr-control style3">{$OutDate_editcontrol}</div>
+</div>
+{END OutDate_fieldblock}
+</td>
+</tr>
+		<tr>
+	<td colspan="2">
+		<div class="rnr-field">
+		{$TabGroup Schooling1}&nbsp;		
+		</div>
+	</td>
+</tr>
+		
+				
+				
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN save_button}
+<a href="#" class="rnr-button main" {$savebutton_attrs}>Save</a>
+{END save_button}
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+{BEGIN view_page_button}
+<a href="#" class="rnr-button" {$view_page_button_attrs}>View</a>
+{END view_page_button}
+</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_edit}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

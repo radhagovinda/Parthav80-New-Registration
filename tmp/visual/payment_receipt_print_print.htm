@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META http-equiv="X-UA-Compatible" content="IE=Edge">
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}<!--[if IE]><LINK rel=stylesheet type=text/css href="styles/defaultIE.css">{BEGIN IEcssFiles}<LINK rel=stylesheet type=text/css href="{$stylepathIE}">{END IEcssFiles}<![endif]-->
+<META name=GENERATOR content="MSHTML 10.00.9200.16736"></HEAD>
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}{$header} 
+<TABLE class=runner-toptable style="HEIGHT: 452px; WIDTH: 1133px" 
+  cellPadding=0><TR class=runner-body><TD class="runner-center {$blockclass_center}" style="WIDTH: 1019px"><P align=center><FONT size=6 face=Verdana>Partha Educational Institutions 
+      </FONT></P>
+      <P align=center>(A division of Sri SriRadha Govinda’s Pilgrim Relief 
+      Trust)</P></TD>
+    <TD class="runner-right {$blockclass_right}" style="WIDTH: 2px"></TD></TR>
+  <TR class=runner-body><TD class="runner-center {$blockclass_center}" style="WIDTH: 1019px"><P>Head Office - 3C Albert Road, Kolkata- 700017 </P>
+      <P>Email: <A href="mailto:diro.partha@gmail.com">diro.partha@gmail.com</A> 
+      </P>
+      <P>Phone: 033-23218423 Mob: 9163833903 </P>
+      <P>Office Hrs:12PM–8PM (MON Off) </P></TD>
+    <TD class="runner-right {$blockclass_right}" style="WIDTH: 2px"></TD></TR>
+  <TR class=runner-body><TD class="runner-center {$blockclass_center}" style="WIDTH: 1019px"><P align=center><FONT size=5>Receipt</FONT></P></TD>
+    <TD class="runner-right {$blockclass_right}" style="WIDTH: 2px"></TD></TR>
+  <TR class=runner-body><TD class="runner-center {$blockclass_center}" 
+      style="WIDTH: 1019px">&nbsp;&nbsp; 
+      <TABLE style="WIDTH: 645px" cellSpacing=1 cellPadding=1 width="75%" 
+      border=1><TR><TD style="WIDTH: 326px"><P align=left><FONT size=3>Receipt No:&nbsp;&nbsp; </FONT>{$ReceiptNumber_value}</P></TD>
+          <TD style="WIDTH: 325px"><P align=right><FONT size=3>Date:&nbsp;</FONT>{$PaymentDate_value}</P></TD></TR>
+        <TR><TD style="WIDTH: 326px">Regd.No. :____________ </TD>
+          <TD style="WIDTH: 325px">Roll No.:_____________</TD></TR>
+        <TR><TD style="WIDTH: 326px">Name: 
+            ________________________________________</TD>
+          <TD style="WIDTH: 325px"></TD></TR>
+        <TR><TD style="WIDTH: 326px">Batch: _______Subjects: 
+            ______Month:_________</TD>
+          <TD style="WIDTH: 325px"></TD></TR></TABLE>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P>
+      <P><TABLE style="WIDTH: 926px" cellSpacing=1 cellPadding=1 width="75%" 
+      border=1><TR><TD 
+          style="BACKGROUND-IMAGE: none; WHITE-SPACE: normal; WIDTH: 149px; BACKGROUND-COLOR: #0000ff"><OL><LI><DIV align=center><FONT color=#ffffff 
+              size=3><STRONG><U>&nbsp;Description</U></STRONG></FONT></DIV></LI></OL></TD>
+          <TD 
+          style="WHITE-SPACE: normal; WIDTH: 354px; BACKGROUND-COLOR: #0000ff"><P align=center><FONT size=3><STRONG><U><FONT 
+            color=#0000ff>&nbsp;</FONT><FONT 
+            color=#ffffff>Fees</FONT></U></STRONG></FONT></P></TD>
+          <TD 
+          style="WHITE-SPACE: normal; WIDTH: 300px; BACKGROUND-COLOR: #0000ff"><P align=center><FONT size=3><STRONG><U><FONT 
+            color=#0000ff>&nbsp;</FONT><FONT color=#ffffff>Service 
+            Tax</FONT></U></STRONG></FONT></P></TD>
+          <TD 
+          style="WHITE-SPACE: normal; WIDTH: 119px; BACKGROUND-COLOR: #0000ff"><P align=center><FONT size=3><STRONG><U><FONT 
+            color=#0000ff>&nbsp;</FONT><FONT 
+            color=#ffffff>Total</FONT></U></STRONG></FONT></P></TD></TR>
+        <TR><TD style="WIDTH: 149px"><P align=center><FONT 
+            size=3><STRONG><U></U></STRONG></FONT>&nbsp;</P></TD>
+          <TD style="WIDTH: 354px">&nbsp;</TD>
+          <TD style="WIDTH: 300px">&nbsp;</TD>
+          <TD style="WIDTH: 119px">&nbsp;</TD></TR>
+        <TR><TD style="WIDTH: 149px"></TD>
+          <TD style="WIDTH: 354px"></TD>
+          <TD style="WIDTH: 300px"></TD>
+          <TD style="WIDTH: 119px"></TD></TR>
+        <TR><TD style="WIDTH: 149px">Grand Total</TD>
+          <TD style="WIDTH: 354px"><P align=right>{$Fees_value}</P></TD>
+          <TD style="WIDTH: 300px"><P align=right>{$ServiceTax_value}</P></TD>
+          <TD style="WIDTH: 119px"><P align=right>{$Total_value}</P></TD></TR></TABLE></P>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P>
+      <P><TABLE cellSpacing=1 cellPadding=1 width="100%" border=1><TR><TD>&nbsp;</TD>
+          <TD>&nbsp;</TD></TR>
+        <TR><TD colSpan=2>&nbsp;<FONT size=3>Amount (in words) 
+            Rs:&nbsp; <DIV>{$totalGrandInWords}</DIV></FONT></TD></TR>
+        <TR><TD colSpan=2><FONT size=3>&nbsp;Note: Fees once paid is not 
+            refundable in any circumstances. Service Tax is charged @12.36% on 
+            the fees. &nbsp;</FONT></TD></TR>
+        <TR><TD><P><FONT size=3>&nbsp;PAN No.AAL TS 9367F</FONT></P>
+            <P><FONT size=3>Service Tax No. AAL TS 9367FSD001</FONT></P></TD>
+          <TD><P><FONT size=3>&nbsp;For PARTHA Educational Institutions</FONT></P>
+            <P><FONT size=3></FONT>&nbsp;</P>
+            <P><FONT size=3></FONT>&nbsp;</P>
+            <P><FONT size=3></FONT>&nbsp;</P>
+            <P><FONT size=3></FONT>&nbsp;</P>
+            <P><FONT size=3>(Authorised 
+      Signatory)</FONT></P></TD></TR></TABLE></P>
+      <P>&nbsp;</P></TD>
+    <TD class="runner-right {$blockclass_right}" style="WIDTH: 2px"></TD></TR>
+  <TR class=runner-body><TD class="runner-center {$blockclass_center}" style="WIDTH: 1019px">{BEGIN container_grid}{BEGIN grid_block}&nbsp;{END grid_block}{END container_grid}</TD>
+    <TD class="runner-right {$blockclass_right}" style="WIDTH: 2px"></TD></TR>
+  <TR class=runner-footer><TD colSpan=2></TD></TR></TABLE>{$footer}{END body} </BODY></HTML>

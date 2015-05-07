@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} <LINK href="styles/defaultIE.css" rel="stylesheet" type="text/css"> {BEGIN IEcssFiles}<LINK href="{$stylepathIE}" rel="stylesheet" type="text/css">{END IEcssFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.10011.11"> </HEAD> 
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}
+{$header} 
+<TABLE align="center" class="runner-toptable" style="width: auto;" cellpadding="0">
+  <TBODY>
+  <TR class="runner-header">
+    <TD align="center" class="runner-top" style="width: auto;">
+      <TABLE align="left">
+        <TBODY>
+        <TR>
+          <TD style="width: auto;" bgcolor="#ffffff"><IMG src="images/logo.png"> </TD></TR></TBODY></TABLE><FONT 
+      size="6"><U>Receipt</U></FONT> </TD></TR>
+  <TR class="runner-body">
+    <TD style="width: auto;">
+      <HR noshade="">
+    </TD></TR>
+  <TR class="runner-body">
+    <TD align="center" style="width: auto;">
+      <TABLE width="100%" bgcolor="#ffffff" border="0" cellspacing="1" 
+      cellpadding="1">
+        <TBODY>
+        <TR>
+          <TD><FONT size="2">Receipt No:&nbsp;&nbsp; <B>
+            {$ReceiptNumber_value} </B> </FONT> 
+          </TD>
+          <TD align="right"><FONT size="2">Date: <B>
+            {$PaymentDate_value} </B> </FONT> 
+</TD></TR>
+        <TR>
+          <TD></TD>
+          <TD></TD></TR>
+        <TR>
+          <TD colspan="2"><FONT size="2">Name: <B>
+            {$StudentID_value} </B> </FONT> </TD></TR>
+        <TR>
+          <TD><FONT size="2">Roll No.: <B>
+            {$EnrollmentNumber_value} 
+            </B> </FONT> </TD>
+          <TD></TD></TR></TBODY></TABLE></TD></TR>
+  <TR class="runner-body">
+    <TD style="width: auto;">
+      <HR noshade="">
+    </TD></TR>
+  <TR class="runner-body">
+    <TD style="width: auto;"> &nbsp;</TD></TR>
+  <TR class="runner-body">
+    <TD style="width: auto;"> &nbsp;</TD></TR>
+  <TR class="runner-body">
+    <TD align="center" style="width: auto;">
+      <TABLE bgcolor="#ffffff" border="0" cellspacing="1" cellpadding="1">
+        <TBODY>
+        <TR>
+          <TD style="width: 149px;" colspan="4">
+            <P 
+align="center"></P>
+            {$displayDetailTable_vw_student_course_payment_schedule} 
+            <P></P></TD></TR>
+        <TR>
+          <TD style="width: 149px;"></TD>
+          <TD width="354" style="width: 354px;"></TD>
+          <TD style="width: 300px;"></TD>
+          <TD style="width: 119px;"></TD></TR>
+        <TR>
+          <TD colspan="4">
+            <TABLE width="786" style="width: 786px; height: 21px;" bgcolor="#ffffff" 
+            border="0" cellspacing="0" cellpadding="2">
+              <TBODY>
+              <TR>
+                <TD width="412" align="right" style="width: 495px;"><FONT 
+                  size="2"><B> GRAND TOTAL </B> </FONT> </TD>
+                <TD width="73" align="right" style="width: 99px;"><FONT size="2"><B>
+                  {$Fees_value} </B> </FONT> </TD>
+                <TD width="111" align="right" style="width: 117px;"><FONT 
+                  size="2"><B>
+                  {$ServiceTax_value} 
+                  </B> </FONT> </TD>
+                <TD width="103" align="right" style="width: 99px;"><FONT size="2"><FONT 
+                  size="2"><B>
+                  {$Total_value} </B> </FONT></FONT> 
+              </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR class="runner-body">
+    <TD style="width: auto;"> &nbsp;</TD></TR>
+  <TR class="runner-body" bgcolor="#ffffff">
+    <TD style="width: auto;"><FONT size="2">Amount (in words) <B>        Rs:
+      {$TotalInWords_value}&nbsp; only.<BR>
+      {$totalGrandInWords} </B> </FONT> </TD></TR>
+  <TR>
+    <TD colspan="2"><FONT size="2">Note: Fees once paid is not refundable in 
+      any circumstances. Service Tax is charged @12.36% on the 
+      fees.<STRONG></STRONG></FONT> </TD></TR>
+  <TR class="runner-body">
+    <TD style="width: auto;"> &nbsp;</TD></TR>
+  <TR class="runner-body">
+    <TD style="width: auto;"> &nbsp;</TD></TR>
+  <TR class="runner-row style1" bgcolor="#ffffff">
+    <TD class="runner-cl">
+      <P><FONT size="2">Payment Recevied By <B></B></FONT>
+      {$PaymentMode_value}<FONT size="2"><B> </B> 
+      &nbsp;&nbsp;                  Check: # <B>
+      {$CheckNumber_value} </B> &nbsp;&nbsp;        
+                Check Status: <B>
+      {$CheckStatus_value} </B> &nbsp;&nbsp;        
+              Bank <B>
+      {$CheckBank_value} </B> </FONT> 
+      <P></P></TD></TR>
+  <TR class="runner-row style1">
+    <TD align="center" class="runner-cl"> &nbsp;</TD></TR>
+  <TR class="runner-row style1">
+    <TD align="center" class="runner-cl" valign="baseline">
+      <HR noshade="">
+    </TD></TR>
+  <TR class="runner-row style1">
+    <TD align="center" class="runner-cl">
+      <TABLE width="100%" style="width: 957px;" border="0" cellspacing="0" 
+      cellpadding="2">
+        <TBODY>
+        <TR>
+          <TD width="30%" valign="top" style="width: 281px;">
+            <TABLE width="100%" bordercolor="#000000" border="1" cellspacing="0" 
+            cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD valign="top">
+                  <TABLE width="100%" border="0" cellspacing="10" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <P><FONT size="2">&nbsp;PAN No. <B> AAL TS 9367F </B> 
+                        </FONT> </P>
+                        <P><FONT size="2">&nbsp;Service Tax No. <B> 
+                        AALTS9367FSD001 </B> </FONT> 
+              </P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+          <TD width="5%" valign="top" style="width: 59px;"></TD>
+          <TD style="width: 614px;">
+            <TABLE width="100%" border="0" cellspacing="10" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD>
+                  <P align="right"><FONT size="2"><I> For </I> <B> PARTHA 
+                  Educational Institutions </B> </FONT><BR><BR><BR><FONT size="2">(Authorised 
+                  Signatory)</FONT> 
+    </P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR class="runner-row style1">
+    <TD align="center" class="runner-cl"> &nbsp;</TD></TR>
+  <TR class="{$cfooterclass_pdf}">
+    <TD class="runner-cl"> &nbsp;</TD></TR>
+  <TR class="{$cfooterclass_pdf}">
+    <TD class="runner-cc runner-bl runner-b-viewpdf" {$brickclass_viewpdf}><SPAN>{BEGIN pdflink_block}{END pdflink_block}</SPAN> </TD></TR>
+  <TR class="{$cfooterclass_pdf}">
+    <TD class="runner-cl"> &nbsp;</TD></TR></TBODY></TABLE>{END body}</BODY></HTML>
